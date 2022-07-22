@@ -1,0 +1,9 @@
+<footer>
+    <div>
+    {{ if .Site.Params.copyright }}
+        {{ .Site.Params.copyright | safeHTML }}
+    {{ else }}
+        &#xA9; Sridhar Nandigam
+    {{ end }}
+    </div>
+</footer>
