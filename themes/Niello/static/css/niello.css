@@ -211,11 +211,11 @@ ul{
     border: 1px solid rgba(49, 50, 57, 0.6);
 	border-radius       :13px;
     text-align: center;
-	background-color: rgba(49, 50, 57, 0.3);
+	background-color: var(--tagcolor);
 }
 .tag-single > ul > li > a {
 	text-decoration : none;
-	color:#adb5bd;
+	color:#FFF;
 }
 .redot {
 	padding: 3px 10px;
@@ -233,7 +233,7 @@ ul{
 	border: 1px solid rgba(49, 50, 57, 0.6);
 	border-radius       :13px;
 	text-align: center;
-	background-color: rgba(49, 50, 57, 0.3);
+	background-color: rgba(49, 50, 57, 0.3)
 }
 .tag > a {
 	text-decoration : none;
