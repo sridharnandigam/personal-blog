@@ -86,7 +86,7 @@ small > a{
 
 small > a:hover {
     color           : #ffba08;
-    background-color: #000;
+    background-color: #201F1F;
 }
 
 .em {
@@ -268,5 +268,5 @@ ul{
 }
 
 pre {
-	background:#0b090a !important;
+	background:#201F1F!important;
 }
