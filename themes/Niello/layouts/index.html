@@ -13,7 +13,12 @@
         {{ partial "banner.html" . }}
         <div class="home">
             <div class="logo">
+                {{if eq .IsHome true}}
+                <img src = "{{.Site.BaseURL | relLangURL}}img/profile_pic.jpg" class="profile_pic">
+                <h1>{{.Title}}</h1>
+                {{else}}
                 <h1><a href="/">{{.Title}}</a></h1>
+                {{end}}
             </div>
             {{ partial "nav.html" . }}
             <div>

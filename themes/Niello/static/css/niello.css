@@ -80,12 +80,12 @@ small > a{
     justify-content :flex-end;
     text-align      : right;
     font-size       : 16px;
-    color           : #f48c06;
+    color           : #0BF;
     text-decoration : none;
 }
 
 small > a:hover {
-    color           : #ffba08;
+    color           : #00E5FF;
     background-color: #201F1F;
 }
 
@@ -126,7 +126,17 @@ footer {
 }
 
 .logo {
-    padding     : 20px 0 10px;
+    padding : 30px 0 10px;
+}
+
+.logo > * {
+    display:inline
+}
+
+.logo > img {
+    width: 150px;
+    border-radius: 50%;
+    padding-right: 20px;
 }
 
 .navigation {
