@@ -4,7 +4,7 @@ date: 2022-07-22T09:20:09-05:00
 draft: false 
 tags: 
     - "linux"
-    - "fun stuff"
+    - "rant"
 ---
 
 Do you have an old laptop lying around that needs just one more Windows update to end it all? Well, like so many others, I implore you to
@@ -17,7 +17,8 @@ yourself a lot of hassle, it's probably worth it to check how well your hardware
 computer's model and run a quick diagnostics test. 
 
 In my case, my HDD was too old and slow and I opted to replace it with a faster SSD with a larger storage space. 
-However, it may be worth switching to an SSD either way if you are trying to revive an old laptop. SSDs allow for significantly faster boot up times and may be just what you need to make your laptop feel a little bit faster. 
+However, it may be worth switching to an SSD either way if you are trying to revive an old laptop. SSDs allow for significantly faster boot up times and may be just
+what you need to make your laptop feel a little bit faster. 
 
 I've been a Linux user since this January and I've loved it. I wanted to make this PC feel like it was truly mine and that was enough to drive me to explore many new 
 things. I personalized my terminal, learned to use Vim, set up a Git server, learned some networking as I set up ssh with ngrok, coded some handy CLI tools to make
@@ -38,6 +39,6 @@ Pro tip: I learned this the hard way, but it may be a good idea to add something
 ```
 alias rm="rm -I"
 ```
-If you ever screw up and accidentally delete files like I did, there is SOME chance of recovering deleted files from your SSD using the photorec tool or other tools
-online. However, it's best not to take that chance. Back up your files and add the above snippet to your bash script so that it confirms the deletion of files because
-a mistyped "rm -rf" can really ruin your day.
+If you ever screw up and accidentally delete files like I did, there is SOME chance of recovering deleted files from your SSD. I personally used the photorec tool but
+there are many other tools available online. However, it's best not to take that chance. Back up your files and add the above snippet to your bash script so that it 
+confirms the deletion of files with you. Trust me, a mistyped "rm" command can really ruin your day.

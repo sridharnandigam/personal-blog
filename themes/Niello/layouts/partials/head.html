@@ -10,6 +10,8 @@
     <meta name="keywords" content="{{ with .Keywords }} {{- delimit . ", " -}} {{ end }}">
     <meta name="description" content="{{ with .Description }} {{- . -}} {{ end }}">
     {{ end }}
+    <link rel="icon" href="{{.Site.BaseURL | relLangURL}}img/favicon.ico">
+
     <link rel="stylesheet" href="{{.Site.BaseURL | relLangURL}}css/github-dark-dimmed.min.css">
     <link rel="stylesheet" href="{{.Site.BaseURL | relLangURL}}css/normalize.css">
     <link rel="stylesheet" href="{{.Site.BaseURL | relLangURL}}css/niello.css">
