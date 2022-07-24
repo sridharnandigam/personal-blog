@@ -18,6 +18,7 @@
             {{ partial "nav.html" . }}
             <div>
             {{ range (.Paginate ( first 100 .Site.RegularPages.ByPublishDate.Reverse )).Pages }}
+
                 <article>
 					<h3><span class="listarrow">&#10132; <a href="{{ .RelPermalink }}">{{ .Title }}</a><span></h3>
                     <div class="less">

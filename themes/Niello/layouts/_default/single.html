@@ -23,8 +23,7 @@
     {{ `<!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     "python" "darkgreen" "tensorflow" "orange" "pytorch" "rgb(250, 97, 8)" "react" "#61dafb")
-    <![endif]-->` | safeHTML }}
-
+    <![endif]-->` | safeHTML }} 
   <!-- Add your site or application content here -->
     <div class="flex-column">
         {{ partial "banner.html" . }}
@@ -47,6 +46,7 @@
 							</ul>
 						</div>
                     </div>
+                    {{printf "%#v" .IsHome}}
                     <div class="em">{{ .Content | safeHTML }}</div>
                     <br />
                     <br />
