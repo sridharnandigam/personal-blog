@@ -130,7 +130,7 @@ footer {
 }
 
 .logo > * {
-    display:inline
+    display:inline-block;
 }
 
 .logo > img {
