@@ -203,7 +203,7 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (max-width: 30em) {
+@media only screen and (max-width: 600px) {
     /* Style adjustments for viewports that meet the condition */
     html, body {
         width   : 100vw;
@@ -234,6 +234,19 @@ textarea {
 
     .hljs {
         width       : 90vw;
+    }
+
+    .navigation{
+        overflow: hidden;
+        height:  -moz-fit-content;
+        height: fit-content;
+    }
+    .navigation > a{
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+
+    .logo > h1{
     }
 
 }
