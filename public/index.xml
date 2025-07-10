@@ -6,26 +6,28 @@
     <description>Recent content on Sridhar&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jul 2022 21:56:35 -0500</lastBuildDate><atom:link href="http://blog.sridharnandigam.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Aug 2023 21:56:35 -0500</lastBuildDate>
+    <atom:link href="http://blog.sridharnandigam.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lakehouse: The Next Step in Data Warehousing</title>
+      <link>http://blog.sridharnandigam.com/posts/lakehouse/</link>
+      <pubDate>Wed, 09 Aug 2023 21:56:35 -0500</pubDate>
+      <guid>http://blog.sridharnandigam.com/posts/lakehouse/</guid>
+      <description>As we keep making strides in today&amp;rsquo;s data-driven world, businesses need new ways to efficiently store large amounts of raw data while making good use of it. In response, Databricks presents a new data warehouse architecture called Lakehouse. This idea is intended to overtake the popular two-tier architecture of data lakes with data warehouses and set a new standard for data engineering for customers and businesses.&#xA;As a brief background, the journey of data repositories for companies starts with on-premise solutions.</description>
+    </item>
     <item>
       <title>DAGs Are Cool</title>
       <link>http://blog.sridharnandigam.com/posts/dag/</link>
       <pubDate>Wed, 27 Jul 2022 21:56:35 -0500</pubDate>
-      
       <guid>http://blog.sridharnandigam.com/posts/dag/</guid>
-      <description>[REUPLOAD FROM LINKEDIN]
-I found an interesting topic from my discrete math class while exploring ways to design tools for data engineers. When designing data pipelines, it is common to visualize them as DAGs or directed acyclic graphs.
-To break it down, a graph is essentially a collection of points or nodes that are connected by edges. When those edges have a specific direction, the graph is said to be directed.</description>
+      <description>[REUPLOAD FROM LINKEDIN]&#xA;I found an interesting topic from my discrete math class while exploring ways to design tools for data engineers. When designing data pipelines, it is common to visualize them as DAGs or directed acyclic graphs.&#xA;To break it down, a graph is essentially a collection of points or nodes that are connected by edges. When those edges have a specific direction, the graph is said to be directed.</description>
     </item>
-    
     <item>
       <title>Save Your Old Laptop</title>
       <link>http://blog.sridharnandigam.com/posts/linux/</link>
       <pubDate>Fri, 22 Jul 2022 09:20:09 -0500</pubDate>
-      
       <guid>http://blog.sridharnandigam.com/posts/linux/</guid>
       <description>Do you have an old laptop lying around that needs just one more Windows update to end it all? Well, like so many others, I implore you to check out Linux. It&amp;rsquo;s the perfect operating system to bring any PC back to life. There are a wide variety of distros available to choose from based on how much setup you want to do and how &amp;ldquo;light&amp;rdquo; you need it to be.</description>
     </item>
-    
   </channel>
 </rss>
