@@ -97,7 +97,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        with:
-          publish_dir: ./public
         id: deployment
         uses: actions/deploy-pages@v4
