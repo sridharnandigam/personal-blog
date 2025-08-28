@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence on Sridhar&#39;s Blog</title>
+    <link>http://localhost:1313/tags/artificial-intelligence/</link>
+    <description>Recent content in Artificial Intelligence on Sridhar&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Aug 2025 00:12:09 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA&#39;s Jetson Thor Is Impressive</title>
+      <link>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</link>
+      <pubDate>Thu, 28 Aug 2025 00:12:09 -0500</pubDate>
+      <guid>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</guid>
+      <description>&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.&#xA;It&amp;rsquo;s impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities.&#xA;Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.&lt;/p&gt;&#xA;&lt;h3 id=&#34;hardware-and-microarchitecture&#34;&gt;Hardware and Microarchitecture&lt;/h3&gt;&#xA;&lt;h4 id=&#34;blackwell-gpu&#34;&gt;Blackwell GPU&lt;/h4&gt;&#xA;&lt;p&gt;The Jetson Thor T5000 features an NVIDIA Blackwell architecture GPU.&#xA;The &lt;a href=&#34;https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf&#34;&gt;Blackwell architecture&lt;/a&gt; was announced in March 2024 and is used in their groundbreaking GB200 NVL72 data center chips and their more accessible RTX 50 series.&#xA;It boasts CUDA cores with upgraded compute capability, new fifth-generation tensor cores, fourth-generation ray tracing cores, and introduces us to the AI Management Processor (AMP).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

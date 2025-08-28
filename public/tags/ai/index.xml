@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on Sridhar&#39;s Blog</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in Ai on Sridhar&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Jul 2022 09:20:09 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NVIDIA&#39;s Jetson Thor is Cool</title>
+      <link>http://localhost:1313/posts/4_jetson_thor/</link>
+      <pubDate>Fri, 22 Jul 2022 09:20:09 -0500</pubDate>
+      <guid>http://localhost:1313/posts/4_jetson_thor/</guid>
+      <description>&lt;p&gt;Yesterday, NVIDIA released their latest state-of-the-art chip in their Jetson line of products, the Jetson Thor. Jetson Thor markets itself as, not just a chip, but an entire platform aimed at bringing artificial intelligence into the real world. I&amp;rsquo;ve been eyeing their Orion kit for a while now and, with this latest announcement, felt inspired enough to actually make a whole blog post about Jetson Thor.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
