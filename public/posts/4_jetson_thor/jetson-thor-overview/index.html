@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
+    <title>NVIDIA&#39;s Jetson Thor Is Impressive - Sridhar&#39;s Blog</title>
+
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/github-dark-dimmed.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/niello.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/cookie.css">
+    
+    
+</head>
+
+
+
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    "python" "darkgreen" "tensorflow" "orange" "pytorch" "rgb(250, 97, 8)" "react" "#61dafb")
+    <![endif]--> 
+  
+    <div class="flex-column">
+        <div class="ads">
+    
+</div>
+
+        <div class="home">
+            <div class="logo"> 
+                <h1><a href="/">Sridhar&#39;s Blog</a></h1>
+            </div>
+            <div class="navigation">
+    
+    <a href="/" class="">HOME</a>
+    <a href="javascript:void(0);" class="current">ARTICLE</a>
+    
+    <a href="https://sridharnandigam.com">ABOUT ME</a>
+</div>
+
+            <div>
+                <article>
+                    <h3>NVIDIA&#39;s Jetson Thor Is Impressive</h3>
+                    <div class="less">
+                        <time>Published: Tuesday, Aug 26, 2025</time>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6 minute read&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Using 1102 words
+						<div class="tag-single">
+							<time>Tags:&nbsp;</time>
+							<ul>
+								
+								<li style="--tagcolor: "><a href="/tags/artificial-intelligence/">Artificial Intelligence</a></li>
+								
+								<li style="--tagcolor: "><a href="/tags/robotics/">Robotics</a></li>
+								
+								<li style="--tagcolor: "><a href="/tags/hardware/">Hardware</a></li>
+								
+							</ul>
+						</div>
+                    </div>
+                    <div class="em"><h3 id="intro">Intro</h3>
+<p>NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.
+It&rsquo;s impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities.
+Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.</p>
+<h3 id="hardware-and-microarchitecture">Hardware and Microarchitecture</h3>
+<h4 id="blackwell-gpu">Blackwell GPU</h4>
+<p>The Jetson Thor T5000 features an NVIDIA Blackwell architecture GPU.
+The <a href="https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf">Blackwell architecture</a> was announced in March 2024 and is used in their groundbreaking GB200 NVL72 data center chips and their more accessible RTX 50 series.
+It boasts CUDA cores with upgraded compute capability, new fifth-generation tensor cores, fourth-generation ray tracing cores, and introduces us to the AI Management Processor (AMP).</p>
+<p>The AMP is a RISC-V processor that implements a scheduling architecture similar to Hardware-Accelerated GPU Scheduling (HAGS), which was Microsoft’s answer to the scheduling bottleneck between the CPU and the GPU to gamers and AI-powered rendering apps.
+I&rsquo;m not super familiar with this particular processor and, at the moment, it&rsquo;s not entirely clear to me how it fits in with the rest of the Jetson Thor&rsquo;s functionalities.
+I can&rsquo;t find any direct reference to it in the maze of NVIDIA&rsquo;s Jetson webpages. It&rsquo;s advertised as enhancing the scheduling of GPU contexts in Windows but most Jetson Nano chips run best with Ubuntu. I can only assume it is meant to enhance the video output experience in some way or maybe it is really critical to asynchronous AI model workloads.</p>
+<p>Even non-technical folks might find it worthwhile to flip through the microarchitecture of these chips since it essentially determines a processor’s capabilities at the level right above the hardware itself.
+An impressive <a href="https://www.sifive.com/blog/introduction-to-sifive-vector-processors">SiFive processor</a> with vector registers and vector ALUs is only fully useful when paired with the RISC-V ISA supporting the vector extension.
+Simply put, it&rsquo;s an important consideration when looking for a chip with competitive functionality and long-term support.</p>
+<h4 id="everything-else">Everything Else</h4>
+<p>As for the rest of the Jetson Thor chip, we have an impressive multicore ARM Neoverse CPU, a line designed for datacenters and edge computing.
+There&rsquo;s also dedicated hardware for high-quality video encoding and decoding.</p>
+<p>The <a href="https://developer.nvidia.com/embedded/pva#section-how-it-works">Programmable Vision Accelerator v3 (PVA)</a> is a programmable multi-core Digital Signal Processor (DSP) meant to offload certain computer vision tasks from the GPU.</p>
+<p>The <a href="https://docs.nvidia.com/holoscan/sensor-bridge/latest/introduction.html">Holoscan Sensor Bridge</a> is an FPGA chip that&rsquo;s not directly on chip but is worth noting as part of the Jetson Thor ecosystem.
+It implements sensor-over-Ethernet technology, enabling faster multi-sensor transportation of data to the GPU.
+As a result, robots using this chip will have sharper &ldquo;reflexes&rdquo; as they process input data faster.</p>
+<p>More info on the exact specs such as USB ports, drive support, video encoder/decoder, etc., for the Jetson Thor can be found <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/">here</a>.</p>
+<h3 id="software-tools-and-ecosystem">Software Tools and Ecosystem</h3>
+<p>The main draw of the Jetson line of products, in my opinion, is the advanced <a href="https://developer.nvidia.com/embedded/develop/software">software ecosystem</a>, designed to transfer and process data quickly.</p>
+<p>Along with the Jetpack SDK for developing on the Jetson platform, we also have the Holoscan SDK to directly work with the Holoscan Sensor Bridge.
+The <a href="https://docs.nvidia.com/holoscan/sdk-user-guide/index.html">Holoscan SDK</a> pairs with the Holoscan Sensor Bridge by allowing developers to build directed graphs of &ldquo;operators&rdquo; to define data processing and ML workflows.
+NVIDIA also gives us the <a href="https://nvidia-holoscan.github.io/holohub/applications/">HoloHub</a>, a repository of reference applications using the Holoscan SDK in a variety of fields on the Holoscan platform.</p>
+<p><a href="https://www.nvidia.com/en-us/autonomous-machines/intelligent-video-analytics-platform/">NVIDIA Metropolis</a> is NVIDIA&rsquo;s vision AI platform for the development and deployment of vision-based automations.
+This platform provides the tools for advanced applications on both the edge and the cloud by combining sensor and visual data for model training and tuning.</p>
+<p>Roboticists will likely appreciate the <a href="https://developer.nvidia.com/isaac">NVIDIA Isaac Platform</a>. Isaac provides its own <a href="https://developer.nvidia.com/isaac/ros">extension</a> of ROS2 (Robot Operating System).
+On this foundation, Isaac also provides the <a href="https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html">Isaac Manipulator</a> and the <a href="https://developer.nvidia.com/isaac/perceptor">Isaac Perceptor</a>.
+These are collections of CUDA-accelerated libraries and AI models that support applications for robotic manipulators and autonomous mobile robots respectively.</p>
+<p>Isaac&rsquo;s final jewel is <a href="https://developer.nvidia.com/isaac/gr00t">Isaac GR00T</a>.
+GR00T refers to both the research initiative and the platform for developing foundational models for general purpose robots and humanoid robots.
+It provides foundation models such as the <a href="https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks">N1</a>, a family of pretrained customizable models for general robotics applications.</p>
+<p>GR00T also comes with data collection and generation workflows for collecting human demonstration data and generating <a href="https://www.youtube.com/watch?v=8Mwrfvq-GeY">unique simulations for further training</a>.</p>
+<p>Jetson Thor can serve as the &ldquo;brain&rdquo; of Isaac-powered robots by utilizing all of the previously mentioned hardware and software for sensor data collection, data processing, and raw computational power.
+Investors and research companies like <a href="https://blogs.nvidia.com/blog/figure-humanoid-robot-autonomous/">Figure AI</a> will find this extremely useful as they continue to plow ahead in the race for adaptive humanoid robots.</p>
+<h3 id="competition-and-alternatives">&ldquo;Competition&rdquo; and Alternatives</h3>
+<p>&ldquo;Competition&rdquo; is in quotes here because it&rsquo;s hard to find an exact one-to-one competitor in the field of edge robotics.
+Some similar products to Blackwell&rsquo;s Tensor Cores include <a href="https://coral.ai/products/">Google&rsquo;s Edge TPU</a> (Tensor Processing Unit).
+As the name indicates, the processing unit is optimized for matrix multiplication and tensor operations, both fundamental to any machine learning task.
+NVIDIA&rsquo;s Tensor Cores are far more general purpose, making more useful in robotics and multi-modal workloads.</p>
+<p>There&rsquo;s also Tenstorrent with their RISC-V <a href="https://docs.tenstorrent.com/aibs/blackhole/">Blackhole Tensix Processor</a> featuring &ldquo;Tensix Cores&rdquo; and their own software ecosystems.
+Their full line of products is too long to get into here but their IP ranges from superscalar AI processors for datacenters to smaller chips meant to compete with GPUs for ML tasks.
+However, to my knowledge, their chips aren&rsquo;t marketed with a distinct focus on robotics.
+In addition to raw compute power, Jetson Thor goes to great lengths to provide multimedia input processing capabilities for sensor inputs and a vision accelerator, both crucial for physically interactive AI.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>With the focus on enhanced gaming or ML automated workflows on our personal computers and servers, it might be hard to convince people to care about this member of the Blackwell family.
+To break it down, edge computing matters for businesses and individuals that enjoy the usefulness of AI but also value their privacy.
+The field of robotics matters since it takes the next step of bringing AI into the physical world.<br>
+The Jetson Thor itself matters because it enables robotics development by providing a fully integrated ecosystem of sensors, a working ROS environment, and readily available multimodal AI models that can run on limited hardware.
+Speaking from experience, this is really not easy to set up on your own.</p>
+<p>In summary, the Jetson Thor chip shows remarkable improvements in compute power, energy efficiency, and edge AI capabilities, proving that the age of general robotics is hardly a pipe dream.</p>
+</div>
+                    <br />
+                    <br />
+                    <div class="less">Page link: <a href="/posts/4_jetson_thor/jetson-thor-overview/" class="pagelink">/posts/4_jetson_thor/jetson-thor-overview/</a></div>
+                    <div class="line-dotted"></div>
+                <article>
+            </div>
+            <footer>
+    <div>
+    
+        &#xA9; Sridhar Nandigam
+    
+    </div>
+</footer>
+
+        </div>
+        <div class="ads">
+    
+</div>
+
+    </div>
+
+  <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="/js/vendor/jquery-3.6.0.min.js"></script>
+<script>window.jQuery || document.write('\x3Cscript src="\/js/vendor/jquery-3.6.0.min.js"><\/script>')</script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>  
+
+<script src="/js/vendor/highlight.min.js"></script>  
+<script>hljs.initHighlightingOnLoad();</script>
+                                                       
+
+
+<script src="/js/cookie.js"></script>
+
+</body>
+</html>
