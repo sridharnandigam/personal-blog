@@ -52,7 +52,7 @@
                 <article>
                     <h3>NVIDIA&#39;s Jetson Thor Is Impressive</h3>
                     <div class="less">
-                        <time>Published: Thursday, Aug 28, 2025</time>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6 minute read&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Using 1102 words
+                        <time>Published: Thursday, Aug 28, 2025</time>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;6 minute read&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Using 1124 words
 						<div class="tag-single">
 							<time>Tags:&nbsp;</time>
 							<ul>
@@ -70,6 +70,13 @@
 <p>NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.
 It&rsquo;s impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities.
 Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.</p>
+<figure><img src="/thor.jpg"
+    alt="NVIDIA Jetson T5000 Module"><figcaption>
+      <p>NVIDIA Jetson T5000 Module
+          <a href="https://developer.nvidia.com/buy-jetson">Image credit: NVIDIA</a></p>
+    </figcaption>
+</figure>
+
 <h3 id="hardware-and-microarchitecture">Hardware and Microarchitecture</h3>
 <h4 id="blackwell-gpu">Blackwell GPU</h4>
 <p>The Jetson Thor T5000 features an NVIDIA Blackwell architecture GPU.
@@ -88,6 +95,13 @@ There&rsquo;s also dedicated hardware for high-quality video encoding and decodi
 <p>The <a href="https://docs.nvidia.com/holoscan/sensor-bridge/latest/introduction.html">Holoscan Sensor Bridge</a> is an FPGA chip that&rsquo;s not directly on chip but is worth noting as part of the Jetson Thor ecosystem.
 It implements sensor-over-Ethernet technology, enabling faster multi-sensor transportation of data to the GPU.
 As a result, robots using this chip will have sharper &ldquo;reflexes&rdquo; as they process input data faster.</p>
+<figure><img src="/nvidia_sensor_bridge.jpeg"
+    alt="NVIDIA Sensor Bridge Architecture"><figcaption>
+      <p>NVIDIA Sensor Bridge Architecture
+          <a href="https://www.nvidia.com/en-us/technologies/holoscan-sensor-bridge/">Image credit: NVIDIA</a></p>
+    </figcaption>
+</figure>
+
 <p>More info on the exact specs such as USB ports, drive support, video encoder/decoder, etc., for the Jetson Thor can be found <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/">here</a>.</p>
 <h3 id="software-tools-and-ecosystem">Software Tools and Ecosystem</h3>
 <p>The main draw of the Jetson line of products, in my opinion, is the advanced <a href="https://developer.nvidia.com/embedded/develop/software">software ecosystem</a>, designed to transfer and process data quickly.</p>
@@ -99,7 +113,13 @@ This platform provides the tools for advanced applications on both the edge and 
 <p>Roboticists will likely appreciate the <a href="https://developer.nvidia.com/isaac">NVIDIA Isaac Platform</a>. Isaac provides its own <a href="https://developer.nvidia.com/isaac/ros">extension</a> of ROS2 (Robot Operating System).
 On this foundation, Isaac also provides the <a href="https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html">Isaac Manipulator</a> and the <a href="https://developer.nvidia.com/isaac/perceptor">Isaac Perceptor</a>.
 These are collections of CUDA-accelerated libraries and AI models that support applications for robotic manipulators and autonomous mobile robots respectively.</p>
-<p><img src="nvidia_isaac.png" alt="Isaac Ecosystem Diagram"></p>
+<figure><img src="/nvidia_isaac.png"
+    alt="NVIDIA Isaac Platform and Workflows"><figcaption>
+      <p>NVIDIA Isaac Platform and Workflows
+          <a href="https://developer.nvidia.com/isaac">Image credit: NVIDIA</a></p>
+    </figcaption>
+</figure>
+
 <p>Isaac&rsquo;s final jewel is <a href="https://developer.nvidia.com/isaac/gr00t">Isaac GR00T</a>.
 GR00T refers to both the research initiative and the platform for developing foundational models for general purpose robots and humanoid robots.
 It provides foundation models such as the <a href="https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks">N1</a>, a family of pretrained customizable models for general robotics applications.</p>

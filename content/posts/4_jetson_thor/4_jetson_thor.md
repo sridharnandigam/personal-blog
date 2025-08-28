@@ -12,6 +12,14 @@ NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in 
 It's impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities. 
 Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane. 
 
+{{< figure 
+    src="/thor.jpg" 
+    alt="NVIDIA Jetson T5000 Module" 
+    caption="NVIDIA Jetson T5000 Module" 
+    attr="Image credit: NVIDIA" 
+    attrlink="https://developer.nvidia.com/buy-jetson" 
+>}}
+
 ### Hardware and Microarchitecture 
 
 #### Blackwell GPU
@@ -38,6 +46,14 @@ The [Holoscan Sensor Bridge](https://docs.nvidia.com/holoscan/sensor-bridge/late
 It implements sensor-over-Ethernet technology, enabling faster multi-sensor transportation of data to the GPU. 
 As a result, robots using this chip will have sharper "reflexes" as they process input data faster.
 
+{{< figure 
+    src="/nvidia_sensor_bridge.jpeg" 
+    alt="NVIDIA Sensor Bridge Architecture" 
+    caption="NVIDIA Sensor Bridge Architecture" 
+    attr="Image credit: NVIDIA" 
+    attrlink="https://www.nvidia.com/en-us/technologies/holoscan-sensor-bridge/" 
+>}}
+
 More info on the exact specs such as USB ports, drive support, video encoder/decoder, etc., for the Jetson Thor can be found [here](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/).
 
 ### Software Tools and Ecosystem
@@ -54,7 +70,13 @@ Roboticists will likely appreciate the [NVIDIA Isaac Platform](https://developer
 On this foundation, Isaac also provides the [Isaac Manipulator](https://nvidia-isaac-ros.github.io/reference_workflows/isaac_manipulator/index.html) and the [Isaac Perceptor](https://developer.nvidia.com/isaac/perceptor). 
 These are collections of CUDA-accelerated libraries and AI models that support applications for robotic manipulators and autonomous mobile robots respectively.
 
-![Isaac Ecosystem Diagram](nvidia_isaac.png)
+{{< figure 
+    src="/nvidia_isaac.png" 
+    alt="NVIDIA Isaac Platform and Workflows" 
+    caption="NVIDIA Isaac Platform and Workflows" 
+    attr="Image credit: NVIDIA" 
+    attrlink="https://developer.nvidia.com/isaac" 
+>}}
 
 Isaac's final jewel is [Isaac GR00T](https://developer.nvidia.com/isaac/gr00t). 
 GR00T refers to both the research initiative and the platform for developing foundational models for general purpose robots and humanoid robots. 
