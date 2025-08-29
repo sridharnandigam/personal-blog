@@ -27,17 +27,19 @@ The Jetson Thor T5000 features an NVIDIA Blackwell architecture GPU.
 The [Blackwell architecture](https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf) was announced in March 2024 and is used in their groundbreaking GB200 NVL72 data center chips and their more accessible RTX 50 series. 
 It boasts CUDA cores with upgraded compute capability, new fifth-generation tensor cores, fourth-generation ray tracing cores, and introduces us to the AI Management Processor (AMP). 
 
-The AMP is a RISC-V processor that implements a scheduling architecture similar to Hardware-Accelerated GPU Scheduling (HAGS), which was Microsoft’s answer to the scheduling bottleneck between the CPU and the GPU to gamers and AI-powered rendering apps.
-I'm not super familiar with this particular processor and, at the moment, it's not entirely clear to me how it fits in with the rest of the Jetson Thor's functionalities.
-I can't find any direct reference to it in the maze of NVIDIA's Jetson webpages. It's advertised as enhancing the scheduling of GPU contexts in Windows but most Jetson Nano chips run best with Ubuntu. I can only assume it is meant to enhance the video output experience in some way or maybe it is really critical to asynchronous AI model workloads.
+The AMP is a RISC-V processor that implements a scheduling architecture to reduce the scheduling bottleneck between the CPU and the GPU. 
+It's fashioned after Microsoft's Hardware-Accelerated GPU Scheduling (HAGS) to improve performance for games and AI-powered apps on Windows. 
+I'm not super familiar with this particular processor and, at the moment, it's not entirely clear how it fits in with the rest of the Jetson Thor's functionalities.
+The Blackwell documentation describes its purpose to enhance the scheduling of GPU contexts in Windows but most Jetson Nano chips run best with Ubuntu. 
+I can't find any direct reference to the AMP in the actual Jetson webpages but I can only assume it is meant to enhance the video output experience in some way or speed up asynchronous AI model workloads on the edge.
 
-Even non-technical folks might find it worthwhile to flip through the microarchitecture of these chips since it essentially determines a processor’s capabilities at the level right above the hardware itself. 
+These are important considerations and even non-technical folks might find it worthwhile to flip through the microarchitecture of these chips since it essentially determines a processor’s capabilities at the level right above the hardware itself. 
 An impressive [SiFive processor](https://www.sifive.com/blog/introduction-to-sifive-vector-processors) with vector registers and vector ALUs is only fully useful when paired with the RISC-V ISA supporting the vector extension. 
 Simply put, it's an important consideration when looking for a chip with competitive functionality and long-term support.
 
 #### Everything Else
-As for the rest of the Jetson Thor chip, we have an impressive multicore ARM Neoverse CPU, a line designed for datacenters and edge computing. 
-There's also dedicated hardware for high-quality video encoding and decoding. 
+As for the rest of the Jetson Thor chip, we have an impressive multicore ARM Neoverse CPU, a line designed for HPC datacenters and edge computing. 
+There's also dedicated hardware for high-quality video encoding and decoding, ideal for computer vision capabilities. 
 
 The [Programmable Vision Accelerator v3 (PVA)](https://developer.nvidia.com/embedded/pva#section-how-it-works) is a programmable multi-core Digital Signal Processor (DSP) meant to offload certain computer vision tasks from the GPU.
 
@@ -54,14 +56,14 @@ As a result, robots using this chip will have sharper "reflexes" as they process
     attrlink="https://www.nvidia.com/en-us/technologies/holoscan-sensor-bridge/" 
 >}}
 
-More info on the exact specs such as USB ports, drive support, video encoder/decoder, etc., for the Jetson Thor can be found [here](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/).
+More info on additional components such as USB ports, drive support, etc., for the Jetson Thor can be found [here](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-thor/).
 
 ### Software Tools and Ecosystem
 The main draw of the Jetson line of products, in my opinion, is the advanced [software ecosystem](https://developer.nvidia.com/embedded/develop/software), designed to transfer and process data quickly. 
 
 Along with the Jetpack SDK for developing on the Jetson platform, we also have the Holoscan SDK to directly work with the Holoscan Sensor Bridge. 
 The [Holoscan SDK](https://docs.nvidia.com/holoscan/sdk-user-guide/index.html) pairs with the Holoscan Sensor Bridge by allowing developers to build directed graphs of "operators" to define data processing and ML workflows.
-NVIDIA also gives us the [HoloHub](https://nvidia-holoscan.github.io/holohub/applications/), a repository of reference applications using the Holoscan SDK in a variety of fields on the Holoscan platform.
+NVIDIA also gives us the [HoloHub](https://nvidia-holoscan.github.io/holohub/applications/), a repository of reference applications using the Holoscan SDK in a variety of fields.
 
 [NVIDIA Metropolis](https://www.nvidia.com/en-us/autonomous-machines/intelligent-video-analytics-platform/) is NVIDIA's vision AI platform for the development and deployment of vision-based automations.
 This platform provides the tools for advanced applications on both the edge and the cloud by combining sensor and visual data for model training and tuning.
@@ -84,23 +86,23 @@ It provides foundation models such as the [N1](https://nvidianews.nvidia.com/new
 
 GR00T also comes with data collection and generation workflows for collecting human demonstration data and generating [unique simulations for further training](https://www.youtube.com/watch?v=8Mwrfvq-GeY).
 
-Jetson Thor can serve as the "brain" of Isaac-powered robots by utilizing all of the previously mentioned hardware and software for sensor data collection, data processing, and raw computational power.
+Jetson Thor can serve as the "brain" of Isaac-powered robots by utilizing all of the previously mentioned hardware and software for sensor data collection, data processing, and physical movement.
 Investors and research companies like [Figure AI](https://blogs.nvidia.com/blog/figure-humanoid-robot-autonomous/) will find this extremely useful as they continue to plow ahead in the race for adaptive humanoid robots.
 
 ### "Competition" and Alternatives
-"Competition" is in quotes here because it's hard to find an exact one-to-one competitor in the field of edge robotics. 
+"Competition" is in quotes here because it's hard to find an exact one-to-one competitor to NVIDIA on the hardware side of edge robotics. 
 Some similar products to Blackwell's Tensor Cores include [Google's Edge TPU](https://coral.ai/products/) (Tensor Processing Unit). 
-As the name indicates, the processing unit is optimized for matrix multiplication and tensor operations, both fundamental to any machine learning task. 
-NVIDIA's Tensor Cores are far more general purpose, making more useful in robotics and multi-modal workloads.
+As the name indicates, the processor is optimized for matrix multiplication and tensor operations, both fundamental to any machine learning task. 
+NVIDIA's GPU architecture around the Blackwell Tensor Cores provides more general-purpose functionality for robotics and multi-modal workloads.
 
 There's also Tenstorrent with their RISC-V [Blackhole Tensix Processor](https://docs.tenstorrent.com/aibs/blackhole/) featuring "Tensix Cores" and their own software ecosystems. 
-Their full line of products is too long to get into here but their IP ranges from superscalar AI processors for datacenters to smaller chips meant to compete with GPUs for ML tasks. 
+Their full line of products ranges from superscalar AI processors for datacenters to smaller chips meant to compete with GPUs for ML tasks. 
 However, to my knowledge, their chips aren't marketed with a distinct focus on robotics. 
-In addition to raw compute power, Jetson Thor goes to great lengths to provide multimedia input processing capabilities for sensor inputs and a vision accelerator, both crucial for physically interactive AI.
+In addition to raw compute power, Jetson Thor goes to great lengths to provide multimedia sensor input processing capabilities and a vision accelerator, both crucial for physically interactive AI.
 
 ### Conclusion 
-With the focus on enhanced gaming or ML automated workflows on our personal computers and servers, it might be hard to convince people to care about this member of the Blackwell family.
-To break it down, edge computing matters for businesses and individuals that enjoy the usefulness of AI but also value their privacy. 
+With the world's focus on enhanced gaming or AI automated workflows on our personal computers and servers, it might be hard to convince people to care about this member of the Blackwell family.
+The way I see it, edge computing matters for businesses and individuals that enjoy the usefulness of AI but also value their privacy. 
 The field of robotics matters since it takes the next step of bringing AI into the physical world.  
 The Jetson Thor itself matters because it enables robotics development by providing a fully integrated ecosystem of sensors, a working ROS environment, and readily available multimodal AI models that can run on limited hardware. 
 Speaking from experience, this is really not easy to set up on your own.

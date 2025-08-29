@@ -10,9 +10,9 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NVIDIA&#39;s Jetson Thor Is Impressive</title>
-      <link>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</link>
+      <link>http://localhost:1313/posts/4_jetson_thor/</link>
       <pubDate>Thu, 28 Aug 2025 00:12:09 -0500</pubDate>
-      <guid>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</guid>
+      <guid>http://localhost:1313/posts/4_jetson_thor/</guid>
       <description>&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.&#xA;It&amp;rsquo;s impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities.&#xA;Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/thor.jpg&#34;&#xA;    alt=&#34;NVIDIA Jetson T5000 Module&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;NVIDIA Jetson T5000 Module&#xA;          &lt;a href=&#34;https://developer.nvidia.com/buy-jetson&#34;&gt;Image credit: NVIDIA&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
