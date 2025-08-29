@@ -9,7 +9,7 @@ tags:
 ---
 ### Intro
 NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products. 
-It's impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities. 
+It's so impressive that it has awoken me from my slumber long enough to do a brief overview of its capabilities. 
 Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane. 
 
 {{< figure 
@@ -24,7 +24,7 @@ Following the trend of its predecessors, Jetson Thor is marketed as an entire pl
 
 #### Blackwell GPU
 The Jetson Thor T5000 features an NVIDIA Blackwell architecture GPU.
-The [Blackwell architecture](https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf) was announced in March 2024 and is used in their groundbreaking GB200 NVL72 data center chips and their more accessible RTX 50 series. 
+The [Blackwell architecture](https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf) was announced in March 2024 and is used in their groundbreaking GB200 NVL72 data center chips and their consumer RTX 50 series. 
 It boasts CUDA cores with upgraded compute capability, new fifth-generation tensor cores, fourth-generation ray tracing cores, and introduces us to the AI Management Processor (AMP). 
 
 The AMP is a RISC-V processor that implements a scheduling architecture to reduce the scheduling bottleneck between the CPU and the GPU. 
@@ -33,7 +33,7 @@ I'm not super familiar with this particular processor and, at the moment, it's n
 The Blackwell documentation describes its purpose to enhance the scheduling of GPU contexts in Windows but most Jetson Nano chips run best with Ubuntu. 
 I can't find any direct reference to the AMP in the actual Jetson webpages but I can only assume it is meant to enhance the video output experience in some way or speed up asynchronous AI model workloads on the edge.
 
-These are important considerations and even non-technical folks might find it worthwhile to flip through the microarchitecture of these chips since it essentially determines a processor’s capabilities at the level right above the hardware itself. 
+These are important considerations and even non-technical folks might find it worthwhile to flip through the microarchitecture of this GPU since it essentially determines its capabilities at the level right above the hardware itself. 
 An impressive [SiFive processor](https://www.sifive.com/blog/introduction-to-sifive-vector-processors) with vector registers and vector ALUs is only fully useful when paired with the RISC-V ISA supporting the vector extension. 
 Simply put, it's an important consideration when looking for a chip with competitive functionality and long-term support.
 
