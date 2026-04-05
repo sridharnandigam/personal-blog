@@ -6,14 +6,21 @@
     <description>Recent content in Hardware on Sridhar&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Aug 2025 00:12:09 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 00:12:09 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Interesting Stuff I&#39;ve Read Recently</title>
+      <link>http://localhost:1313/posts/5_interesting_articles/</link>
+      <pubDate>Mon, 15 Dec 2025 00:12:09 -0500</pubDate>
+      <guid>http://localhost:1313/posts/5_interesting_articles/</guid>
+      <description>&lt;p&gt;It feels like every time I open Linkedin, Twitter, Youtube, Medium, etc, I get blasted with articles and videos about cool stuff going on in the world.&#xA;Unfortunately, I only have so much free time, so in order to maintain my sanity I set aside a select few to actually read in-depth.&#xA;Additionally, I realized it would be productive for me to take a step back and review what I&amp;rsquo;ve read once in a while.&#xA;So here&amp;rsquo;s a few interesting things I&amp;rsquo;ve read/watched recently.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>NVIDIA&#39;s Jetson Thor Is Impressive</title>
-      <link>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</link>
+      <link>http://localhost:1313/posts/4_jetson_thor/</link>
       <pubDate>Thu, 28 Aug 2025 00:12:09 -0500</pubDate>
-      <guid>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</guid>
-      <description>&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.&#xA;It&amp;rsquo;s impressive enough that it has awoken me from my slumber long enough to do a brief overview of its capabilities.&#xA;Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/thor.jpg&#34;&#xA;    alt=&#34;NVIDIA Jetson T5000 Module&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;NVIDIA Jetson T5000 Module&#xA;          &lt;a href=&#34;https://developer.nvidia.com/buy-jetson&#34;&gt;Image credit: NVIDIA&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/4_jetson_thor/</guid>
+      <description>&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;NVIDIA recently released the Jetson Thor, their latest state-of-the-art chip in their Jetson line of products.&#xA;It&amp;rsquo;s so impressive that it has awoken me from my slumber long enough to do a brief overview of its capabilities.&#xA;Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/thor.jpg&#34;&#xA;    alt=&#34;NVIDIA Jetson T5000 Module&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;NVIDIA Jetson T5000 Module&#xA;          &lt;a href=&#34;https://developer.nvidia.com/buy-jetson&#34;&gt;Image credit: NVIDIA&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

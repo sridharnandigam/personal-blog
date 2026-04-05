@@ -1,0 +1,14 @@
+baseURL = 'http://blog.sridharnandigam.com'
+languageCode = 'en-us'
+title = "Sridhar's Blog"
+theme = 'Niello'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+[params]
+  math = true

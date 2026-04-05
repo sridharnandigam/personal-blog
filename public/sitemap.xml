@@ -3,24 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hardware/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/4_jetson_thor/4_jetson_thor/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <loc>http://localhost:1313/posts/5_interesting_articles/</loc>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/robotics/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-28T00:12:09-05:00</lastmod>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-12-15T00:12:09-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/4_jetson_thor/</loc>
     <lastmod>2025-08-28T00:12:09-05:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-engineering/</loc>
