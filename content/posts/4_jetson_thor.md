@@ -13,7 +13,7 @@ It's so impressive that it has awoken me from my slumber long enough to do a bri
 Following the trend of its predecessors, Jetson Thor is marketed as an entire platform aimed at bringing interactive artificial intelligence into the physical plane. 
 
 {{< figure 
-    src="/thor.jpg" 
+    src="/img/jetson-thor/thor.jpg" 
     alt="NVIDIA Jetson T5000 Module" 
     caption="NVIDIA Jetson T5000 Module" 
     attr="Image credit: NVIDIA" 
@@ -49,7 +49,7 @@ It implements sensor-over-Ethernet technology, enabling faster multi-sensor tran
 As a result, robots using this chip will have sharper "reflexes" as they process input data faster.
 
 {{< figure 
-    src="/nvidia_sensor_bridge.jpeg" 
+    src="/img/jetson-thor/nvidia_sensor_bridge.jpeg" 
     alt="NVIDIA Sensor Bridge Architecture" 
     caption="NVIDIA Sensor Bridge Architecture" 
     attr="Image credit: NVIDIA" 
@@ -73,7 +73,7 @@ On this foundation, Isaac also provides the [Isaac Manipulator](https://nvidia-i
 These are collections of CUDA-accelerated libraries and AI models that support applications for robotic manipulators and autonomous mobile robots respectively.
 
 {{< figure 
-    src="/nvidia_isaac.png" 
+    src="/img/jetson-thor/nvidia_isaac.png" 
     alt="NVIDIA Isaac Platform and Workflows" 
     caption="NVIDIA Isaac Platform and Workflows" 
     attr="Image credit: NVIDIA" 
