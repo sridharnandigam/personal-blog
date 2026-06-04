@@ -1,4 +1,4 @@
-baseURL = 'http://blog.sridharnandigam.com'
+baseURL = 'https://blog.roguegpu.com'
 languageCode = 'en-us'
 title = "Sridhar's Blog"
 theme = 'Niello'
