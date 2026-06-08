@@ -22,23 +22,29 @@ The following is top-down view of my take on the LLM-focused AI stack.
 | Layer                                 | Concepts                                            |
 +---------------------------------------+-----------------------------------------------------+
 | Agent Harnesses / Multi-agent systems | LLMOps  Prompt Optimization (Prompt Ops)            |
+|                                       |                                                     |
 |                                       | Generator-Evaluator Loops                           |
 +---------------------------------------+-----------------------------------------------------+
 | Agents / Agentic Applications         | MCP Servers  Prompt Engineering  Semantic Search    |
+|                                       |                                                     |
 |                                       | Retrieval-Augmented Generation                      |
 +---------------------------------------+-----------------------------------------------------+
 | LLM Inference/Serving                 | Flash Attention  KV Cache  Speculative Decoding     |
+|                                       |                                                     |
 |                                       | Continuous Batching  PagedAttention  Quantization   |
 +---------------------------------------+-----------------------------------------------------+
 | LLM Training/Finetuning               | Pretraining  Finetuning  Distillation               |
 +---------------------------------------+-----------------------------------------------------+
 | LLM Architecture                      | Multimodal LLMs  Mixture-of-Experts                 |
+|                                       |                                                     |
 |                                       | Small Language Models  Multihead Latent Attention   |
+|                                       |                                                     |
 |                                       | Vision-Language-Action models (VLAs)                |
 +---------------------------------------+-----------------------------------------------------+
 | Deep Learning                         | Transformers  CNNs  RNNs  LSTMs  Embedding models   |
 +---------------------------------------+-----------------------------------------------------+
 | Machine Learning                      | PCA  Clustering  Autoencoders                       |
+|                                       |                                                     |
 |                                       | Nearest-Neighbor Search                             |
 +---------------------------------------+-----------------------------------------------------+
 | ML Frameworks                         | torch.compile (PyTorch)  XLA (JAX)  DeepSpeed       |
@@ -48,6 +54,7 @@ The following is top-down view of my take on the LLM-focused AI stack.
 | Intermediate Representations (IR)     | PTX  Tile IR  SASS                                  |
 +---------------------------------------+-----------------------------------------------------+
 | Hardware/Networking                   | GPU  SRAM  DPU  TPU  Systolic Architectures         |
+|                                       |                                                     |
 |                                       | Caching  NVLink  RDMA  System-on-Module (SOM)       |
 +---------------------------------------+-----------------------------------------------------+
 ```
