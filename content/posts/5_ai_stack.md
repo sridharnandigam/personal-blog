@@ -2,8 +2,11 @@
 title: "My Take on the AI Stack"
 date: 2026-06-07T22:56:12-05:00
 draft: false
+tags: 
+    - "artificial intelligence"
+    - "ai engineering"
+    - "ml engineering"
 ---
-
 When machine learning started taking off around 6 years ago, before the advent of ChatGPT, everyone started chasing after the
 title of "machine learning engineer". If you looked at their resumes and the job postings that targeted them, you would have
 found a variety of skills across the stack, ranging from data science to MLOps to GPU programming. 
@@ -12,7 +15,7 @@ Now, an even more loaded term is floating around the industry: the "AI engineer"
 same. Whenever I'm asked about what I'm working on or what paper I've read related to the AI field, I have a hard time 
 setting the context of where exactly the topic falls. 
 
-As such, I've laid out my take on the LLM-centric AI stack/hierarchy to save my breath in the future. 
+The following is top-down view of my take on the LLM-focused AI stack. 
 
 ```goat
 +---------------------------------------+-----------------------------------------------------+
@@ -45,6 +48,6 @@ As such, I've laid out my take on the LLM-centric AI stack/hierarchy to save my 
 | Intermediate Representations (IR)     | PTX  Tile IR  SASS                                  |
 +---------------------------------------+-----------------------------------------------------+
 | Hardware/Networking                   | GPU  SRAM  DPU  TPU  Systolic Architectures         |
-|                                       | Caching  NVLink  RDMA                               |
+|                                       | Caching  NVLink  RDMA  System-on-Module (SOM)       |
 +---------------------------------------+-----------------------------------------------------+
 ```
